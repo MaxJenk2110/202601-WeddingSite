@@ -779,6 +779,10 @@ id="compCssMappers_c1dmp">
     --min-height:63px;
     --text-direction:var(--wix-opt-in-direction);
 }
+.image-link img {
+    border-radius: 15px;   /* adjust to taste */
+    display: block;        /* removes inline spacing */
+}
 </style>
 
 <style>
@@ -1393,23 +1397,88 @@ fill&quot;, &quot.hasAnimation&quot;
                                 </div>
                                 <div id="comp-mj5qkqys" class="wixui-rich-text directions">
 
-                                <p class="font_5 wixui-rich-text__text">Address</p>
-                                <p class="body">Grand Villa Heights, Ravenscar, Scarborough, YO13 0ET</p>
+                                <p class="font_5 wixui-rich-text__text"
+                                    style="font-size:25px; line-height:normal; text-align:center;">
+                                    <span style="color:#E4DFD0;">
+                                         <span style="font-family:eschaton,serif;">
+                                    <br>Address
+                                        </span>
+                                    </span>
+                                </p>
+                                <p class="font_8 wixui-rich-text__text"
+                                    style="font-size:18px; line-height:normal; text-align:center;">
+                                    <span style="color:#E4DFD0;">
+                                        <span style="font-family:eschaton,serif;">
+                                    Grand Villa Heights, Ravenscar, Scarborough, YO13 0ET
+                                        </span>
+                                    </span>
+                                </p>
+                                <p class="font_8 wixui-rich-text__text"
+                                    style="font-size:15px; line-height:normal; text-align:center;">
+                                    <span style="color:#E4DFD0;">
+                                        <span style="font-family:eschaton,serif;">
+                                    <i>(Press the map for directions)</i>
+                                        </span>
+                                    </span>
+                                </p>
 
-                                <p class="font_5 wixui-rich-text__text">Time from Scarborough town centre:</p>
-                                <p class="body">20 – 30 minutes by car</p>
+                                <p class="font_5 wixui-rich-text__text"
+                                    style="font-size:20px; line-height:normal; text-align:center;">
+                                    <span style="color:#E4DFD0;">
+                                         <span style="font-family:eschaton,serif;">
+                                <br>Time from Scarborough town centre:
+                                        </span>
+                                    </span>
+                                </p>
+                                <p class="font_8 wixui-rich-text__text"
+                                    style="font-size:15px; line-height:normal; text-align:center;">
+                                    <span style="color:#E4DFD0;">
+                                        <span style="font-family:eschaton,serif;">
+                                20 <b>-</b> 30 minutes by car
+                                        </span>
+                                    </span>
+                                </p>
 
-                                <p class="font_5 wixui-rich-text__text">From Whitby:</p>
-                                <p class="body">25 – 30 minutes by car</p>
+                                <p class="font_5 wixui-rich-text__text"
+                                    style="font-size:20px; line-height:normal; text-align:center;">
+                                    <span style="color:#E4DFD0;">
+                                         <span style="font-family:eschaton,serif;">
+                                    From Whitby:
+                                        </span>
+                                    </span>
+                                </p>
+                                <p class="font_8 wixui-rich-text__text"
+                                   style="font-size:15px; line-height:normal; text-align:center;">
+                                      <span style="color:#E4DFD0;">
+                                        <span style="font-family:eschaton,serif;">
+                                    25 <b>-</b> 30 minutes by car
+                                        </span>
+                                    </span>
+                                </p>
 
-                                <p class="font_5 wixui-rich-text__text">Parking</p>
-                                <p class="body">Free on-site parking available for all guests</p>
+                                <p class="font_5 wixui-rich-text__text"
+                                    style="font-size:20px; line-height:normal; text-align:center;">
+                                    <span style="color:#E4DFD0;">
+                                         <span style="font-family:eschaton,serif;">
+                                    <br>Parking
+                                        </span>
+                                    </span>
+                                </p>
+
+                                <p class="font_8 wixui-rich-text__text"
+                                   style="font-size:15px; line-height:normal; text-align:center;">
+                                      <span style="color:#E4DFD0;">
+                                        <span style="font-family:eschaton,serif;">
+                                    Free on-site parking available for all guests
+                                        </span>
+                                    </span>
+                                </p>
 
                                 <p class="font_5 wixui-rich-text__text"
                                    style="font-size:20px; line-height:normal; text-align:center;">
                                     <span style="color:#E4DFD0;">
                                          <span style="font-family:eschaton,serif;">
-                                    Closest train station:
+                                    <br>Closest train station:
                                         </span>
                                     </span>
                                 </p>
@@ -1703,16 +1772,20 @@ fill&quot;, &quot.hasAnimation&quot;
                                 </div>
                             -->
                                 <div id="comp-mj5qj21j" class="MazNVa comp-mj5qj21j wixui-image">
-                                    <div data-testid="linkElement" class="j7pOnl">
-                                        <img 
-                                        loading="eager" 
-                                        sizes="329px" 
-                                        srcSet="assets/images/venueMap.png"
-                                        id="" 
-                                        src="assets/images/venueMap.png" 
-                                        width="329" 
-                                        height="404"
-                                        />
+                                    <!--<div data-testid="linkElement" class="j7pOnl">-->
+                                        <a href="https://www.google.com/maps/search/?api=1&query=Grand%20Villa%20Heights%20Ravenscar%2C%20Scarborough%2C%20YO13%200ET%2C%20United%20Kingdom"
+                                            class="image-link">
+                                            <img 
+                                            loading="eager" 
+                                            sizes="329px" 
+                                            srcSet="assets/images/venueMap.png"
+                                            title="Grand Villa Heights Directions (Google maps)"
+                                            id="" 
+                                            src="assets/images/venueMap.png" 
+                                            width="329" 
+                                            height="404"
+                                            />
+                                        </a>
                                     </div>
                                 </div>
                             <!--/$-->
@@ -2286,7 +2359,7 @@ fill&quot;, &quot.hasAnimation&quot;
             <span style="font-weight:normal;" class="wixui-rich-text__text">
                 <span style="font-family:eschaton,serif;" class="wixui-rich-text__text">
                     <span style="letter-spacing:0em;" class="wixui-rich-text__text">
-    RSVP V12.1
+    RSVP V13
                     </span>
                 </span>
             </span>
