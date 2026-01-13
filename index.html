@@ -779,10 +779,25 @@ id="compCssMappers_c1dmp">
     --min-height:63px;
     --text-direction:var(--wix-opt-in-direction);
 }
-.image-link img {
-    border-radius: 15px;   /* adjust to taste */
-    display: block;        /* removes inline spacing */
+.image-link {
+    display: inline-block; /* ensures proper box model */
+    overflow: visible;      /* clips shadow if image has rounded corners */
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+    border-radius: 15px;   /* adjust to taste */   
 }
+.image-link img {
+    display: block; /* ensures proper box model */
+    border-radius: 15px;   /* adjust to taste */   
+}
+.image-link:hover {
+    transform: scale(1.03); /* slight zoom on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.35); /* stronger shadow on hover */
+}
+.image-link:active img {
+    transform: scale(0.96);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.25);
+}
+
 </style>
 
 <style>
