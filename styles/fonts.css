@@ -1,0 +1,81 @@
+/* ==================================== */
+/* ============  SLIDE 1 ============== */
+/* ==================================== */
+
+/* HOLY-RIVER FONT VARIATIONS */
+@font-face {
+    font-family: 'holy-river';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://static.parastorage.com/fonts/v2/89c9303b-f020-4725-94fe-6021e4f72e67/v1/holy-river.other.woff2') format('woff2');
+    unicode-range: U+02C7, U+02D8-02D9, U+02DB, U+02DD, U+2070;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'holy-river';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://static.parastorage.com/fonts/v2/89c9303b-f020-4725-94fe-6021e4f72e67/v1/holy-river.latin-ext.woff2') format('woff2');
+    unicode-range: U+0102-0107, U+010C-010D, U+0118-0119, U+011E-011F, U+0130, U+0141-0144, U+0150-0151, U+015A-015B, U+015E-0161, U+0170-0171, U+0178-017E, U+0218-021B, U+2020;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'holy-river';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://static.parastorage.com/fonts/v2/89c9303b-f020-4725-94fe-6021e4f72e67/v1/holy-river.latin.woff2') format('woff2');
+    unicode-range: U+0000, U+000D, U+0020-005D, U+005F-007D, U+00A1-00A3, U+00A5, U+00A7-00AB, U+00AE, U+00B0, U+00B2-00B4, U+00B8-00B9, U+00BB, U+00BF-00F6, U+00F8-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+20AC, U+2212;
+    font-display: swap;
+}
+
+* ESCHATON FONT VARIATIONS */
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 400; src: url('https://static.parastorage.com/fonts/v2/1128f1fa-17f8-44a8-95d8-cdd7577705dc/v1/eschaton.other.woff2') format('woff2'); unicode-range: U+02C7, U+02D8-02D9, U+02DB, U+02DD, U+1EBC-1EBD, U+2021, U+2030, U+2070, U+2075-2079, U+2080-2089, U+2117, U+2153-2154, U+215B-215E, U+FB01-FB02;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 400; src: url('https://static.parastorage.com/fonts/v2/7d5c920e-3ff4-4bc9-9afc-fc78986832c0/v1/eschaton.other.woff2') format('woff2'); unicode-range: U+02C7, U+02D8-02D9, U+02DB, U+02DD, U+1EBC-1EBD, U+2021, U+2030, U+2070, U+2075-2079, U+2080-2089, U+2117, U+2153-2154, U+215B-215E, U+FB01-FB02;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 600; src: url('https://static.parastorage.com/fonts/v2/37f45c6e-f0f6-4922-9ce3-9cdd5ab84e7d/v1/eschaton.other.woff2') format('woff2'); unicode-range: U+02C7, U+02D8-02D9, U+02DB, U+02DD, U+1EBC-1EBD, U+2021, U+2030, U+2070, U+2075-2079, U+2080-2089, U+2117, U+2153-2154, U+215B-215E, U+FB01-FB02;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 600; src: url('https://static.parastorage.com/fonts/v2/5f668c44-285c-47f2-b547-3fbf7265cda7/v1/eschaton.other.woff2') format('woff2'); unicode-range: U+02C7, U+02D8-02D9, U+02DB, U+02DD, U+1EBC-1EBD, U+2021, U+2030, U+2070, U+2075-2079, U+2080-2089, U+2117, U+2153-2154, U+215B-215E, U+FB01-FB02;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 700; src: url('https://static.parastorage.com/fonts/v2/181d7d62-9c95-4414-9203-d12a58c7614f/v1/eschaton.other.woff2') format('woff2'); unicode-range: U+02C7, U+02D8-02D9, U+02DB, U+02DD, U+1EBC-1EBD, U+2021, U+2030, U+2070, U+2075-2079, U+2080-2089, U+2117, U+2153-2154, U+215B-215E, U+FB01-FB02;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 700; src: url('https://static.parastorage.com/fonts/v2/991d0f1e-4f47-4a54-99a3-e5ae8628762d/v1/eschaton.other.woff2') format('woff2'); unicode-range: U+02C7, U+02D8-02D9, U+02DB, U+02DD, U+1EBC-1EBD, U+2021, U+2030, U+2070, U+2075-2079, U+2080-2089, U+2117, U+2153-2154, U+215B-215E, U+FB01-FB02;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 400; src: url('https://static.parastorage.com/fonts/v2/1128f1fa-17f8-44a8-95d8-cdd7577705dc/v1/eschaton.math.woff2') format('woff2'); unicode-range: U+0394, U+03A9, U+03BC, U+03C0, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 400; src: url('https://static.parastorage.com/fonts/v2/7d5c920e-3ff4-4bc9-9afc-fc78986832c0/v1/eschaton.math.woff2') format('woff2'); unicode-range: U+0394, U+03A9, U+03BC, U+03C0, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 600; src: url('https://static.parastorage.com/fonts/v2/37f45c6e-f0f6-4922-9ce3-9cdd5ab84e7d/v1/eschaton.math.woff2') format('woff2'); unicode-range: U+0394, U+03A9, U+03BC, U+03C0, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 600; src: url('https://static.parastorage.com/fonts/v2/5f668c44-285c-47f2-b547-3fbf7265cda7/v1/eschaton.math.woff2') format('woff2'); unicode-range: U+0394, U+03A9, U+03BC, U+03C0, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 700; src: url('https://static.parastorage.com/fonts/v2/181d7d62-9c95-4414-9203-d12a58c7614f/v1/eschaton.math.woff2') format('woff2'); unicode-range: U+0394, U+03A9, U+03BC, U+03C0, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 700; src: url('https://static.parastorage.com/fonts/v2/991d0f1e-4f47-4a54-99a3-e5ae8628762d/v1/eschaton.math.woff2') format('woff2'); unicode-range: U+0394, U+03A9, U+03BC, U+03C0, U+2202, U+2206, U+220F, U+2211, U+221A, U+221E, U+222B, U+2248, U+2260, U+2264-2265, U+25CA;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 400; src: url('https://static.parastorage.com/fonts/v2/1128f1fa-17f8-44a8-95d8-cdd7577705dc/v1/eschaton.latin-ext.woff2') format('woff2'); unicode-range: U+0100-0107, U+010A-011B, U+011E-0123, U+0126-0130, U+0132-0133, U+0136-0137, U+0139-0148, U+014A-0151, U+0154-015B, U+015E-017E, U+018F, U+0192, U+01CD-01D0, U+01FC-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+1EF2-1EF3, U+1EF8-1EF9, U+2020, U+20BD;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 400; src: url('https://static.parastorage.com/fonts/v2/7d5c920e-3ff4-4bc9-9afc-fc78986832c0/v1/eschaton.latin-ext.woff2') format('woff2'); unicode-range: U+0100-0107, U+010A-011B, U+011E-0123, U+0126-0130, U+0132-0133, U+0136-0137, U+0139-0148, U+014A-0151, U+0154-015B, U+015E-017E, U+018F, U+0192, U+01CD-01D0, U+01FC-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+1EF2-1EF3, U+1EF8-1EF9, U+2020, U+20BD;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 600; src: url('https://static.parastorage.com/fonts/v2/37f45c6e-f0f6-4922-9ce3-9cdd5ab84e7d/v1/eschaton.latin-ext.woff2') format('woff2'); unicode-range: U+0100-0107, U+010A-011B, U+011E-0123, U+0126-0130, U+0132-0133, U+0136-0137, U+0139-0148, U+014A-0151, U+0154-015B, U+015E-017E, U+018F, U+0192, U+01CD-01D0, U+01FC-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+1EF2-1EF3, U+1EF8-1EF9, U+2020, U+20BD;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 600; src: url('https://static.parastorage.com/fonts/v2/5f668c44-285c-47f2-b547-3fbf7265cda7/v1/eschaton.latin-ext.woff2') format('woff2'); unicode-range: U+0100-0107, U+010A-011B, U+011E-0123, U+0126-0130, U+0132-0133, U+0136-0137, U+0139-0148, U+014A-0151, U+0154-015B, U+015E-017E, U+018F, U+0192, U+01CD-01D0, U+01FC-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+1EF2-1EF3, U+1EF8-1EF9, U+2020, U+20BD;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 700; src: url('https://static.parastorage.com/fonts/v2/181d7d62-9c95-4414-9203-d12a58c7614f/v1/eschaton.latin-ext.woff2') format('woff2'); unicode-range: U+0100-0107, U+010A-011B, U+011E-0123, U+0126-0130, U+0132-0133, U+0136-0137, U+0139-0148, U+014A-0151, U+0154-015B, U+015E-017E, U+018F, U+0192, U+01CD-01D0, U+01FC-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+1EF2-1EF3, U+1EF8-1EF9, U+2020, U+20BD;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 700; src: url('https://static.parastorage.com/fonts/v2/991d0f1e-4f47-4a54-99a3-e5ae8628762d/v1/eschaton.latin-ext.woff2') format('woff2'); unicode-range: U+0100-0107, U+010A-011B, U+011E-0123, U+0126-0130, U+0132-0133, U+0136-0137, U+0139-0148, U+014A-0151, U+0154-015B, U+015E-017E, U+018F, U+0192, U+01CD-01D0, U+01FC-01FF, U+0218-021B, U+0237, U+0259, U+1E80-1E85, U+1E9E, U+1EF2-1EF3, U+1EF8-1EF9, U+2020, U+20BD;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 400; src: url('https://static.parastorage.com/fonts/v2/1128f1fa-17f8-44a8-95d8-cdd7577705dc/v1/eschaton.latin.woff2') format('woff2'); unicode-range: U+0020-007E, U+00A0-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 400; src: url('https://static.parastorage.com/fonts/v2/7d5c920e-3ff4-4bc9-9afc-fc78986832c0/v1/eschaton.latin.woff2') format('woff2'); unicode-range: U+0020-007E, U+00A0-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 600; src: url('https://static.parastorage.com/fonts/v2/37f45c6e-f0f6-4922-9ce3-9cdd5ab84e7d/v1/eschaton.latin.woff2') format('woff2'); unicode-range: U+0020-007E, U+00A0-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 600; src: url('https://static.parastorage.com/fonts/v2/5f668c44-285c-47f2-b547-3fbf7265cda7/v1/eschaton.latin.woff2') format('woff2'); unicode-range: U+0020-007E, U+00A0-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: normal; font-weight: 700; src: url('https://static.parastorage.com/fonts/v2/181d7d62-9c95-4414-9203-d12a58c7614f/v1/eschaton.latin.woff2') format('woff2'); unicode-range: U+0020-007E, U+00A0-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212;font-display: swap;
+}
+@font-face {font-family: 'eschaton'; font-style: italic; font-weight: 700; src: url('https://static.parastorage.com/fonts/v2/991d0f1e-4f47-4a54-99a3-e5ae8628762d/v1/eschaton.latin.woff2') format('woff2'); unicode-range: U+0020-007E, U+00A0-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2013-2014, U+2018-201A, U+201C-201E, U+2022, U+2026, U+2039-203A, U+2044, U+2074, U+20AC, U+2122, U+2212;font-display: swap;
+}

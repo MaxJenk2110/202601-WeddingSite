@@ -1,0 +1,366 @@
+/* layout.css */
+
+/* ==================================== */
+/* ============  GENERAL ============== */
+/* ==================================== */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+    /* stationary background image */
+    background-image: url('../assets/images/backgrounds/venueFront.jpg');
+    background-size: cover;       /* makes image cover entire viewport */
+    background-repeat: no-repeat; /* prevents tiling */
+    background-position: center;  /* centers the image */
+    background-attachment: fixed; /* keeps the image stationary while scrolling */
+}
+
+/* contains each 'slide' */
+
+
+
+/* ==================================== */
+/* ============  SLIDE 1 ============== */
+/* ==================================== */
+
+.slide1 {
+    position: relative;        /* positioning context for images */
+    width: 80vw;
+    min-height: 85vh;         /* 85% of full viewport height per slide */
+    display: flex;
+    justify-content: center;   /* horizontally center content */
+    align-items: center;       /* vertically center content if needed */
+    z-index: 1;           /* keeps content above background */
+    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    max-width: 90vw;
+    margin: 10vw auto;
+    border-radius: 5vw;
+}
+
+.imageS1 {
+    position: absolute;   /* allows precise positioning inside the container */
+    top: 50%;             /* vertical center */
+    transform: translateY(-50%); /* vertically center the image */
+    max-width: 100vw;       /* adjust image size */
+    height: auto;
+}
+
+.imageS1.centre-top {
+    top: 30%; /* position near the top */
+    left: 50%; /* center horizontally */
+    transform: translate(-50%, -50%); /* centering */
+}
+
+.imageS1.centre-bottom {
+    top: 50%; /* position near the bottom */
+    left: 50%; /* center horizontally */
+    transform: translate(-50%, -50%); /* centering */
+}
+
+/* ==================================== */
+/* ============  SLIDE 2 ============== */
+/* ==================================== */
+
+.slide2 {
+    position: relative;        /* positioning context for images */
+    width: 80vw;
+    min-height: 55vh;         /* 85% of full viewport height per slide */
+    display: flex;
+    justify-content: center;   /* horizontally center content */
+    align-items: center;       /* vertically center content if needed */
+    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    max-width: 90vw;
+    margin: 10vw auto;
+    border-radius: 5vw;
+    z-index: 1;           /* keeps content above background */
+}
+
+.imageS2 {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); /* only vertical centering */
+    max-width: 30vw;
+    height: auto;
+}
+
+.imageS2.left {
+    top: 50%;               /* vertical center */
+    left: 5%;               /* distance from left edge of the container */
+}
+
+.slide2-text-container {
+    position: absolute;      /* position relative to the slide */
+    right: 7%;
+    display: flex;
+    flex-direction: column;  /* stack children vertically */
+    align-items: center;     /* center each child horizontally */
+    gap: 0.5em;              /* vertical spacing between lines, adjust as needed */
+    text-align: center;      /* fallback for child text */
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
+}
+
+.september-date {
+    font-family: 'holy-river';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 6vw;
+    line-height: 1;          /* better than 0.5em for readability */
+    color: #343E2D;
+}
+
+.at {
+    font-family: 'holy-river';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 1;
+    color: #343E2D;
+}
+
+.venue {
+    font-family: 'eschaton';
+    font-weight: 100;        /* use numeric value instead of 'light' */
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 1;
+    color: #343E2D;
+}
+
+
+/* ==================================== */
+/* ============  SLIDE 3 ============== */
+/* ==================================== */
+
+.slide3 {
+    position: relative;        /* positioning context for images */
+    width: 80vw;
+    min-height: 55vh;         /* 85% of full viewport height per slide */
+    display: flex;
+    justify-content: center;   /* horizontally center content */
+    align-items: center;       /* vertically center content if needed */
+    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    max-width: 90vw;
+    margin: 10vw auto;
+    border-radius: 5vw;
+    z-index: 1;           /* keeps content above background */
+}
+
+.slide3-text-container {
+    position: absolute;      /* position relative to the slide */
+    width: 70vw;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;  /* stack children vertically */
+    align-items: center;     /* center each child horizontally */
+    gap: 0.5em;              /* vertical spacing between lines, adjust as needed */
+    text-align: center;      /* fallback for child text */
+
+    /* Use transparent PNG colour background */
+    background-image: url('../assets/images/backgrounds/slide3_textBox.png');
+    background-repeat: no-repeat;
+    background-size: cover;      /* stretch to fill container */
+    background-position: center; /* center the image */
+    
+
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
+}
+
+.slide3-text-container .title {
+    font-family: 'holy-river';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 6vw;
+    line-height: 1;          /* better than 0.5em for readability */
+    color: #E4DFD0;;
+}
+
+.slide3-text-container .mainText {
+    font-family: 'eschaton';
+    font-weight: 100;        /* use numeric value instead of 'light' */
+    font-style: normal;
+    font-size: 1.5vw;
+    line-height: 1.3;        /* increase vertical spacing between lines */
+    letter-spacing: 0.05em;  /* small spacing between letters */
+
+    width: 80%;
+    max-width: 90%;
+    color: #E4DFD0;;
+}
+
+.slide3-text-container .names {
+    font-family: 'holy-river';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 4vw;
+    line-height: 0.4em;          /* better than 0.5em for readability */
+    color: #E4DFD0;;
+}
+
+
+/* ==================================== */
+/* ============  SLIDE 4 ============== */
+/* ==================================== */
+
+.slide4 {
+    position: relative;        /* positioning context for images */
+    width: 80vw;
+    min-height: 55vh;         /* 85% of full viewport height per slide */
+    display: flex;
+    justify-content: center;   /* horizontally center content */
+    align-items: center;       /* vertically center content if needed */
+    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    max-width: 90vw;
+    margin: 10vw auto;
+    border-radius: 5vw;
+    z-index: 1;           /* keeps content above background */
+}
+
+.imageS4 {
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%); /* only vertical centering */
+    height: 70%;
+}
+
+.slide4-text-container {
+    position: absolute;      /* position relative to the slide */
+    top: 10%;
+    width: 70vw;
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;  /* stack children vertically */
+    align-items: center;     /* center each child horizontally */
+    gap: 0.5em;              /* vertical spacing between lines, adjust as needed */
+    text-align: center;      /* fallback for child text */
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
+}
+
+.slide4-text-container .title {
+    font-family: 'holy-river';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 6vw;
+    line-height: 1;          /* better than 0.5em for readability */
+    color: #343E2D;;
+}
+
+
+/* ==================================== */
+/* ============  SLIDE 5 ============== */
+/* ==================================== */
+
+
+.slide5 {
+    position: relative;        /* positioning context for images */
+    width: 80vw;
+    min-height: 55vh;         /* 85% of full viewport height per slide */
+    display: flex;
+    justify-content: center;   /* horizontally center content */
+    align-items: center;       /* vertically center content if needed */
+    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    max-width: 90vw;
+    margin: 10vw auto;
+    border-radius: 5vw;
+    z-index: 1;           /* keeps content above background */
+}
+
+.buttonS5 {
+    position: absolute;
+    right: 10%;
+    width: 30%;
+    display: inline-block;      /* ensures proper box model */
+    border-radius: 3vw;        /* rounded corners */
+    overflow: hidden;           /* clip any overflow */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    z-index: 2;
+}
+/* Style the image inside the link */
+.buttonS5 img {
+    display: block;
+    width: 100%;               /* scale image to link container */
+    height: auto;              
+    object-fit: cover;         /* optional: maintain aspect ratio */
+}
+/* Hover effect */
+.buttonS5:hover {
+    transform: scale(1.03);
+    /*box-shadow: 0 10px 20px rgba(0,0,0,0.35);*/
+}
+/* Click effect */
+.buttonS5:active img {
+    transform: scale(0.96);
+    /*box-shadow: 0 2px 6px rgba(0,0,0,0.25);*/
+}
+
+.slide5-text-container {
+    position: absolute;      /* position relative to the slide */
+    top: 10%;
+    width: 70vw;
+    min-height: 43vh;
+    display: flex;
+    flex-direction: column;  /* stack children vertically */
+    align-items: center;     /* center each child horizontally */
+    gap: 0.5em;              /* vertical spacing between lines, adjust as needed */
+    text-align: center;      /* fallback for child text */
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
+}
+
+.slide5-text-container .title {
+    font-family: 'holy-river';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 6vw;
+    line-height: 1;          /* better than 0.5em for readability */
+    color: #E4DFD0;;
+}
+
+.slide5-text-container .mainText {
+    font-family: 'eschaton';
+    font-weight: 100;        /* use numeric value instead of 'light' */
+    font-style: normal;
+    font-size: 1.5vw;
+    line-height: 1.3;        /* increase vertical spacing between lines */
+    letter-spacing: 0.05em;  /* small spacing between letters */
+    align-self: flex-start;
+    text-align: center;
+    width: 55%;
+    color: #E4DFD0;;
+}
+
+.slide5-text-container .mainTextHeader {
+    font-family: 'eschaton';
+    font-weight: 600;        /* use numeric value instead of 'light' */
+    font-style: normal;
+    font-size: 2vw;
+    line-height: 1.3;        /* increase vertical spacing between lines */
+    letter-spacing: 0.05em;  /* small spacing between letters */
+    align-self: flex-start;
+    text-align: center;
+    width: 55%;
+    color: #E4DFD0;;
+}
+
+.slide5-text-container .mainTextNote {
+    font-family: 'eschaton';
+    font-weight: 100;        /* use numeric value instead of 'light' */
+    font-style: normal;
+    font-size: 1.3vw;
+    line-height: 1.3;        /* increase vertical spacing between lines */
+    letter-spacing: 0.05em;  /* small spacing between letters */
+    align-self: flex-start;
+    text-align: center;
+    width: 55%;
+    color: #E4DFD0;;
+}
+
+
+/* ==================================== */
+/* ============  SLIDE 6 ============== */
+/* ==================================== */
+
