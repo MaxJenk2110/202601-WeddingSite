@@ -781,3 +781,26 @@ body {
     }
 
 }
+
+
+/* Static full-screen background */
+body::before {
+    content: "";
+    position: fixed;        /* stays in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/images/backgrounds/venueFront.jpg');
+    background-size: cover;      /* fills screen without stretching */
+    background-position: center; /* centers the image */
+    background-repeat: no-repeat;
+    z-index: -1;                 /* behind all content */
+}
+
+/* Fix iOS zooming/scroll issue */
+@supports (-webkit-overflow-scrolling: touch) {
+    body::before {
+        position: absolute; /* iOS treats fixed weirdly; absolute works */
+    }
+}
