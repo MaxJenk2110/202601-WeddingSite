@@ -17,6 +17,20 @@ body {
     background-attachment: fixed; /* keeps the image stationary while scrolling */
 }
 
+/* Fixed background for all screens */
+.fixed-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../assets/images/backgrounds/venueFront.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Keep behind all content */
+}
+
 /* contains each 'slide' */
 
 
