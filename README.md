@@ -4,17 +4,14 @@ TO DO:
  - Phone formatting
 
 KNOWN ISSUES:
- - Final BG not loading on my phone
- - Buttons broken on new version -> check branch version
- - layout broken on map slide -> maybe something to do with the :host stuff
+ - Scaling with window size changes
+ - Not stacking vertical for phones (havent started integrating this yet)
 
 
  IDEAS:
- - Maybe rewrite all of the css!!!
-   - ADVANTAGES
-   -> Better understanding of how to structure and style the website
-   -> Full control
-   -> Dramatic reduction in CSS size
-   - DISADVANTAGES
-   -> Need to finish by end of week
-   -> 
+ - Change slide 5 into two columns with title as the first row like slide 6
+
+ NOTES:
+ - For Google forms
+    -> Turn off email collections and allow multiple responses
+    -> Get embed link (in settings)
