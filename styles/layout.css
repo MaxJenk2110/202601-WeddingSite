@@ -43,6 +43,7 @@ body {
     position: absolute;   /* allows precise positioning inside the container */
     top: 50%;             /* vertical center */
     transform: translateY(-50%); /* vertically center the image */
+    min-width: 40vw;
     max-width: 100vw;       /* adjust image size */
     height: auto;
 }
