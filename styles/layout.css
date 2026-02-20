@@ -159,10 +159,10 @@ body {
     text-align: center;      /* fallback for child text */
 
     /* Use transparent PNG colour background */
-    background-image: url('../assets/images/backgrounds/slide3_textBox.png');
-    background-repeat: no-repeat;
-    background-size: cover;      /* stretch to fill container */
-    background-position: center; /* center the image */
+    /* background-image: url('../assets/images/backgrounds/slide3_textBox.png');*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;      /* stretch to fill container */
+    /*background-position: center; /* center the image */
     
 
     background-color: rgba(255, 255, 255, 0.6);
@@ -598,7 +598,6 @@ body {
     .slide1,
     .slide2,
     .slide3,
-    .slide4,
     .slide5,
     .slide6,
     .slide7,
@@ -611,7 +610,6 @@ body {
     /* Remove most absolute positioning */
     .slide2-text-container,
     .slide3-text-container,
-    .slide4-text-container,
     .slide5-text-container,
     .slide6-text-container,
     .slide7-text-container {
@@ -620,7 +618,32 @@ body {
         top: auto;
     }
 
-    /* 🔥 Make all large text readable */
+    .slide4 {
+        flex-direction: column;    /* stack children vertically */
+        align-items: center;       /* center content horizontally */
+        width: 95vw;
+        padding: 8vw auto;
+    }
+
+    .slide4-text-container {
+        position: relative;      /* remove absolute positioning */
+        width: 90%;              /* nearly full width */
+        top: auto;               /* reset top */
+        margin-bottom: 5vw;
+    }
+
+    .slide4 .imageS4 {
+        position: relative;
+        width: 100%;              /* make it bigger */
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;            /* center image */
+        top: auto;                 /* reset previous top */
+        transform: none;
+    }
+
+
+    /* Makes text readable */
     .slide3-text-container .mainText,
     .slide5-text-container .mainText,
     .slide7-text-container .mainText {
@@ -643,18 +666,43 @@ body {
         font-size: 10vw;
     }
 
+    /* SLIDE 2 text resizing */
+    .september-date{
+        font-size: 10vw;
+    }
+    .at {
+        font-size: 6vw;
+    }
+    .venue {
+        font-size: 6vw;
+    }
+
+    /* SLIDE 3 text resizing */
+    .slide3-text-container .names {
+        font-size: 6vw;
+    }
+
     /* SLIDE 2 image + text stack vertically */
-    .slide2 {
+    .slide2,
+    .slide3,
+    .slide4,
+    .slide5,
+    .slide7 {
         flex-direction: column;
         padding: 5vw 0;
     }
 
-    .imageS2 {
-        position: relative;
-        max-width: 80%;
+    /* Centre imageS2 */
+    .imageS2.left {
+        position: relative;       /* remove absolute positioning */
+        top: auto;
         left: auto;
-        transform: none;
-        margin-bottom: 5vw;
+        transform: none;          /* remove shift */
+        display: block;           /* needed for margin auto */
+        margin: 0 auto 5vw auto;  /* horizontal centering + bottom spacing */
+        width: 70vw;              /* make it bigger */
+        max-width: 90vw;          /* optional: prevent overflow */
+        height: auto;
     }
 
     .slide2-text-container {
@@ -688,9 +736,9 @@ body {
         padding: 1.2em 1em;
     }
 
-    /* SLIDE 7 remove floating image */
+    /* Was only there to fill space on desktop */
     .imageS7 {
-        display: none;
+    display: none;
     }
 
     /* SLIDE 8 form full width */
@@ -700,11 +748,17 @@ body {
     }
 
     .rsvp-container {
-        width: 90%;
+        width: 100%;           /* nearly full width */
+        max-width: 100%;     /* optional: cap width for bigger phones */
+        
     }
 
     .rsvp-container iframe {
-        height: 70vh;
+        width: 100%;
+        height: 90vh;         /* nearly full viewport height */
+        min-height: 500px;    /* prevents too small iframe on short screens */
+        border: none;
+        border-radius: 20px;
     }
 
 }
