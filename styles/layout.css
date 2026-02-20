@@ -66,11 +66,12 @@ body {
 .slide2 {
     position: relative;        /* positioning context for images */
     width: 80vw;
-    min-height: 55vh;         /* 85% of full viewport height per slide */
+    min-height: 75vh;         /* 85% of full viewport height per slide */
     display: flex;
     justify-content: center;   /* horizontally center content */
     align-items: center;       /* vertically center content if needed */
-    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    background-color: #EAE4CC;
     max-width: 90vw;
     margin: 10vw auto;
     border-radius: 5vw;
@@ -83,6 +84,7 @@ body {
     transform: translateY(-50%); /* only vertical centering */
     max-width: 30vw;
     height: auto;
+    max-height: 70vh;
 }
 
 .imageS2.left {
@@ -98,7 +100,7 @@ body {
     align-items: center;     /* center each child horizontally */
     gap: 0.5em;              /* vertical spacing between lines, adjust as needed */
     text-align: center;      /* fallback for child text */
-    background-color: rgba(255, 255, 255, 0.6);
+    /*background-color: rgba(255, 255, 255, 0.6);*/
     z-index: 2;
 }
 
@@ -137,11 +139,14 @@ body {
 .slide3 {
     position: relative;        /* positioning context for images */
     width: 80vw;
-    min-height: 55vh;         /* 85% of full viewport height per slide */
+    height: 80vh;
+    min-height: 55vh;
+    max-height: 80vh;         /* 85% of full viewport height per slide */
     display: flex;
     justify-content: center;   /* horizontally center content */
     align-items: center;       /* vertically center content if needed */
-    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    background-color: #55634A;
     max-width: 90vw;
     margin: 10vw auto;
     border-radius: 5vw;
@@ -212,7 +217,8 @@ body {
     display: flex;
     justify-content: center;   /* horizontally center content */
     align-items: center;       /* vertically center content if needed */
-    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    background-color: #EAE4CC;
     max-width: 90vw;
     margin: 10vw auto;
     border-radius: 5vw;
@@ -236,7 +242,7 @@ body {
     align-items: center;     /* center each child horizontally */
     gap: 0.5em;              /* vertical spacing between lines, adjust as needed */
     text-align: center;      /* fallback for child text */
-    background-color: rgba(255, 255, 255, 0.6);
+    /*background-color: rgba(255, 255, 255, 0.6);*/
     z-index: 2;
 }
 
@@ -258,11 +264,12 @@ body {
 .slide5 {
     position: relative;        /* positioning context for images */
     width: 80vw;
-    min-height: 55vh;         /* 85% of full viewport height per slide */
+    min-height: 75vh;         /* 85% of full viewport height per slide */
     display: flex;
     justify-content: center;   /* horizontally center content */
     align-items: center;       /* vertically center content if needed */
-    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    background-color: #55634A;
     max-width: 90vw;
     margin: 10vw auto;
     border-radius: 5vw;
@@ -367,11 +374,12 @@ body {
 .slide6 {
     position: relative;        /* positioning context for images */
     width: 80vw;
-    min-height: 55vh;         /* 85% of full viewport height per slide */
+    min-height: 90vh;         /* 85% of full viewport height per slide */
     display: flex;
     justify-content: center;   /* horizontally center content */
     align-items: center;       /* vertically center content if needed */
-    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    background-color: #EAE4CC;
     max-width: 90vw;
     margin: 10vw auto;
     border-radius: 5vw;
@@ -392,7 +400,7 @@ body {
     align-items: stretch;      /* vertical alignment inside cells */
     text-align: center;
 
-    background-color: rgba(255, 255, 255, 0.7);
+    /*background-color: rgba(255, 255, 255, 0.7);*/
     z-index: 2;
     padding: 2em;
 }
@@ -400,7 +408,7 @@ body {
 .slide6-text-container .leftContainer,
 .slide6-text-container .centreContainer,
 .slide6-text-container .rightContainer {
-    background-color: rgba(0,0,0,0.2);
+    /*background-color: rgba(0,0,0,0.2);*/
 
     display: flex;
     flex-direction: column;
@@ -421,7 +429,7 @@ body {
 
 .slide6-text-container .imageS6 {
     max-width: auto;
-    height: 15vh;
+    height: 20vh;
     display: block;
     margin: 0 auto 1em auto; /* centers image with spacing */
 }
@@ -439,7 +447,7 @@ body {
 }
 
 .buttonContainer {
-    background-color: rgba(0,0,0,0.2);
+    /*background-color: rgba(0,0,0,0.2);*/
     
     margin-top: auto;  /* pushes button section to bottom */
     display: flex;
@@ -484,11 +492,12 @@ body {
 .slide7 {
     position: relative;        /* positioning context for images */
     width: 80vw;
-    min-height: 55vh;         /* 85% of full viewport height per slide */
+    min-height: 90vh;         /* 85% of full viewport height per slide */
     display: flex;
     justify-content: center;   /* horizontally center content */
     align-items: center;       /* vertically center content if needed */
-    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    background-color: #55634A;
     max-width: 90vw;
     margin: 10vw auto;
     border-radius: 5vw;
@@ -522,7 +531,7 @@ body {
     font-family: 'eschaton';
     font-weight: 100;        /* use numeric value instead of 'light' */
     font-style: normal;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     line-height: 1.3;        /* increase vertical spacing between lines */
     letter-spacing: 0.05em;  /* small spacing between letters */
     align-self: flex-start;
@@ -563,11 +572,18 @@ body {
 .slide8 {
     position: relative;        /* positioning context for images */
     width: 80vw;
-    min-height: 55vh;         /* 85% of full viewport height per slide */
+    min-height: 95vh;         /* 85% of full viewport height per slide */
     display: flex;
     justify-content: flex-end;   /* horizontally center content */
     align-items: center;       /* vertically center content if needed */
-    background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    
+    /* Use transparent PNG colour background */
+    background-image: url('../assets/images/backgrounds/functionHall.jpg');*/
+    background-repeat: no-repeat;*/
+    background-size: cover;      /* stretch to fill container */
+    background-position: center; /* center the image */
+
     max-width: 90vw;
     margin: 10vw auto;
     border-radius: 5vw;
@@ -576,12 +592,12 @@ body {
 
 .rsvp-container {
     background-color: rgba(0,0,0,0.2);
-    width: 35vw;              /* control form width */
+    width: 45vw;              /* control form width */
 }
 
 .rsvp-container iframe {
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     border: none;
     border-radius: 20px;
 }
