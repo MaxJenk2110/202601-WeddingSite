@@ -9,22 +9,15 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     
-    /* stationary background image */
-    background-image: url('../assets/images/backgrounds/venueFront.jpg');
-    background-size: cover;       /* makes image cover entire viewport */
-    background-repeat: no-repeat; /* prevents tiling */
-    background-position: center;  /* centers the image */
-    /*background-attachment: fixed; /* keeps the image stationary while scrolling */
+    /* background handled by .fixed-bg */
 }
 
 /* Fixed background for all screens */
 .fixed-bg {
     position: fixed;
     inset: 0;
-    top: 0;
-    left: 0;
-    width: auto;
-    height: 120vh;
+    width: 100vw;
+    height: 100svh;
     background-image: url('../assets/images/backgrounds/venueFront.jpg');
     background-size: cover;
     background-position: center;
