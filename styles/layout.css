@@ -702,6 +702,7 @@ body {
     .slide5-text-container .mainTextHeader,
     .slide7-text-container .mainTextHeader {
         font-size: 5vw;
+        margin-top: 3vw;
         width: 100%;
     }
 
