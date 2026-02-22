@@ -65,13 +65,13 @@ body {
 }
 
 .imageS1.centre-top {
-    top: 30%; /* position near the top */
+    top: 50%; /* position near the top */
     left: 50%; /* center horizontally */
     transform: translate(-50%, -50%); /* centering */
 }
 
 .imageS1.centre-bottom {
-    top: 50%; /* position near the bottom */
+    top: 70%; /* position near the bottom */
     left: 50%; /* center horizontally */
     transform: translate(-50%, -50%); /* centering */
 }
