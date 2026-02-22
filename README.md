@@ -5,7 +5,7 @@ TO DO:
 
 KNOWN ISSUES:
  - Scaling with window size changes
- - Not stacking vertical for phones (havent started integrating this yet)
+ - On iOS the static background isnt static and scrolls to a zoomed in version!!
 
 
  IDEAS:
