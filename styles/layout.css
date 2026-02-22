@@ -699,7 +699,21 @@ body {
         width: 100%;
     }
 
-    .slide5-text-container .mainTextHeader,
+    .slide5-text-container .mainTextHeader {
+        font-size: 5vw;
+        width: 100%;
+        margin-bottom: -2vw;
+    }
+
+    .slide5-text-container .mainText {
+        font-size: 4vw;
+        width: 100%;
+    }
+
+    .slide5-text-container .mainTextNote {
+        font-size: 3vw;
+        width: 100%;
+    }
     .slide7-text-container .mainTextHeader {
         font-size: 5vw;
         margin-top: 3vw;
