@@ -762,6 +762,10 @@ body {
         margin-top: 5vw; /* move it down by 5% of viewport width */
     }
 
+    .slide5-text-container .title {
+        margin-top: 5vw; /* move it down by 5% of viewport width */
+    }
+
     /* SLIDE 5 map button */
     .buttonS5 {
         position: relative;
