@@ -24,7 +24,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
-    height: 100vh;
+    height: 100svh;
     background-image: url('../assets/images/backgrounds/venueFront.jpg');
     background-size: cover;
     background-position: center;
@@ -597,7 +597,7 @@ body {
     
     /* Use transparent PNG colour background */
     background-image: url('../assets/images/backgrounds/functionHall.jpg');*/
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     background-size: cover;      /* stretch to fill container */
     background-position: center; /* center the image */
 
