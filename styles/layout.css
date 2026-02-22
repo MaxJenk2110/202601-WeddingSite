@@ -714,6 +714,7 @@ body {
         font-size: 3vw;
         width: 100%;
     }
+
     .slide7-text-container .mainTextHeader {
         font-size: 5vw;
         margin-top: 3vw;
@@ -773,11 +774,9 @@ body {
         right: auto;
     }
 
-    .slide4-text-container .title {
-        margin-top: 5vw; /* move it down by 5% of viewport width */
-    }
-
-    .slide5-text-container .title {
+    .slide4-text-container .title,
+    .slide5-text-container .title,
+    .slide7-text-container .title {
         margin-top: 5vw; /* move it down by 5% of viewport width */
     }
 
