@@ -22,6 +22,7 @@ body {
     height: 100%;
     background-image: url('../assets/images/backgrounds/venueFront.jpg');
     background-size: cover;
+    background-attachment: scroll;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
