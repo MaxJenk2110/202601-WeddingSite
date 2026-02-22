@@ -660,6 +660,7 @@ body {
         flex-direction: column;    /* stack children vertically */
         align-items: center;       /* center content horizontally */
         width: 95vw;
+        min-height: 25svh;
         padding: 8vw auto;
     }
 
