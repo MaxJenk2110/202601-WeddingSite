@@ -15,6 +15,12 @@ body {
     /* background handled by .fixed-bg */
 }
 
+/* Ensure padding does not cause width overflow */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
 /* Fixed background for all screens */
 .fixed-bg {
     position: fixed;
@@ -33,27 +39,33 @@ body {
     object-fit: cover;
 }
 
-
-/* contains each 'slide' */
-
-
+/* General Slide parameters */
+.slide1,
+.slide2,
+.slide3,
+.slide4,
+.slide5,
+.slide6,
+.slide7,
+.slide8 {
+    position: relative;
+    width: min(1400px, 90%);
+    margin: 5rem auto;       /* [top bottom] controls spacing between slides. */
+    align-items: center;
+    border-radius: 3rem;
+    z-index: 1;
+}
 
 /* ==================================== */
 /* ============  SLIDE 1 ============== */
 /* ==================================== */
 
 .slide1 {
-    position: relative;        /* positioning context for images */
-    width: 80vw;
     min-height: 85vh;         /* 85% of full viewport height per slide */
     display: flex;
     justify-content: center;   /* horizontally center content */
-    align-items: center;       /* vertically center content if needed */
-    z-index: 1;           /* keeps content above background */
     background-color: rgba(255, 255, 255, 0.1); /* optional: semi-transparent layer for readability */
-    max-width: 90vw;
-    margin: 10vw auto;
-    border-radius: 5vw;
+    margin: 5rem auto;
 }
 
 .imageS1 {
@@ -81,7 +93,7 @@ body {
 /* ============  SLIDE 2 ============== */
 /* ==================================== */
 
-.slide2 {
+.slide2OLD {
     position: relative;        /* positioning context for images */
     width: 80vw;
     min-height: 75vh;         /* 85% of full viewport height per slide */
@@ -96,7 +108,38 @@ body {
     z-index: 1;           /* keeps content above background */
 }
 
-.imageS2 {
+.slide2OLD2 {
+    position: relative;        /* positioning context for images */
+    width: min(1400px, 92%);
+    height: 35vw;
+    min-height: 300px;         /* 85% of full viewport height per slide */
+    display: flex;
+    justify-content: center;   /* horizontally center content */
+    align-items: center;       /* vertically center content if needed */
+    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    background-color: #EAE4CC;
+    max-width: 90vw;
+    margin: 10vw auto;
+    border-radius: 5vw;
+    z-index: 1;           /* keeps content above background */
+}
+
+.slide2 {
+    position: relative;
+    width: min(1400px, 90%);
+    min-height: 300px;
+    padding: 4rem 8rem 4rem 4.5em;      /* [top right bottom left] controls spacing content and slides edges. */
+    margin: 5rem auto;       /* [top bottom] controls spacing between slides. */
+    display: flex;
+    justify-content: space-between;  /* space out text and image */
+    gap: 5rem;                   /* gap between text and image */
+    align-items: center;
+    background-color: #EAE4CC;
+    border-radius: 3rem;
+    z-index: 1;
+}
+
+.imageS2OLD {
     position: absolute;
     top: 50%;
     transform: translateY(-50%); /* only vertical centering */
@@ -105,48 +148,46 @@ body {
     max-height: 70vh;
 }
 
-.imageS2.left {
-    top: 50%;               /* vertical center */
-    left: 5%;               /* distance from left edge of the container */
+.imageS2 {
+    position: relative;
+    flex: none;           /* do not allow flexbox to resize */
+    max-width: 400px;     /* preferred max size on desktop */
+    width: 80%;          /* scale down with container */
+    height: auto;         /* ALWAYS preserve intrinsic aspect ratio */
+    display: block;       /* prevent inline stretching quirks */
 }
 
 .slide2-text-container {
-    position: absolute;      /* position relative to the slide */
-    right: 7%;
+    position: relative;
     display: flex;
     flex-direction: column;  /* stack children vertically */
     align-items: center;     /* center each child horizontally */
-    gap: 0.5em;              /* vertical spacing between lines, adjust as needed */
+    gap: 0.5em;              /* vertical spacing between lines */
     text-align: center;      /* fallback for child text */
-    /*background-color: rgba(255, 255, 255, 0.6);*/
+    /*background-color: rgba(255, 255, 255, 0.4);*/
     z-index: 2;
 }
 
-.september-date {
+.september-date,
+.at,
+.venue {
     font-family: 'holy-river';
     font-weight: normal;
     font-style: normal;
-    font-size: 6vw;
     line-height: 1;          /* better than 0.5em for readability */
     color: #343E2D;
 }
 
-.at {
-    font-family: 'holy-river';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 4vw;
-    line-height: 1;
-    color: #343E2D;
+.september-date {
+    font-size: 7rem;
 }
-
+.at {
+    font-size: 4rem;
+}
 .venue {
     font-family: 'eschaton';
     font-weight: 100;        /* use numeric value instead of 'light' */
-    font-style: normal;
-    font-size: 4vw;
-    line-height: 1;
-    color: #343E2D;
+    font-size: 5rem;
 }
 
 
@@ -155,26 +196,16 @@ body {
 /* ==================================== */
 
 .slide3 {
-    position: relative;        /* positioning context for images */
-    width: 80vw;
-    height: 70vh;
-    min-height: 55vh;
-    max-height: 80vh;         /* 85% of full viewport height per slide */
+    min-height: 500px;
+    padding: 4rem 5rem 1rem 5em;      /* [top right bottom left]*/
     display: flex;
     justify-content: center;   /* horizontally center content */
-    align-items: center;       /* vertically center content if needed */
     /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
     background-color: #55634A;
-    max-width: 90vw;
-    margin: 10vw auto;
-    border-radius: 5vw;
-    z-index: 1;           /* keeps content above background */
 }
 
 .slide3-text-container {
-    position: absolute;      /* position relative to the slide */
-    width: 70vw;
-    min-height: 45vh;
+    position: relative;
     display: flex;
     flex-direction: column;  /* stack children vertically */
     align-items: center;     /* center each child horizontally */
@@ -192,35 +223,34 @@ body {
     z-index: 2;
 }
 
-.slide3-text-container .title {
+.slide3-text-container .title,
+.slide3-text-container .mainText,
+.slide3-text-container .names {
     font-family: 'holy-river';
     font-weight: normal;
     font-style: normal;
-    font-size: 6vw;
-    line-height: 1;          /* better than 0.5em for readability */
     color: #E4DFD0;
+}
+
+.slide3-text-container .title {
+    font-size: 6rem;
+    line-height: 1;          /* better than 0.5em for readability */
 }
 
 .slide3-text-container .mainText {
     font-family: 'eschaton';
     font-weight: 100;        /* use numeric value instead of 'light' */
-    font-style: normal;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     line-height: 1.3;        /* increase vertical spacing between lines */
     letter-spacing: 0.05em;  /* small spacing between letters */
 
     width: 80%;
     max-width: 90%;
-    color: #E4DFD0;
 }
 
 .slide3-text-container .names {
-    font-family: 'holy-river';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 4vw;
+    font-size: 3.5rem;
     line-height: 0.4em;          /* better than 0.5em for readability */
-    color: #E4DFD0;
 }
 
 
@@ -598,7 +628,7 @@ body {
     /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
     
     /* Use transparent PNG colour background */
-    background-image: url('../assets/images/backgrounds/functionHall.jpg');*/
+    background-image: url('../assets/images/backgrounds/functionHall.jpg');
     background-repeat: no-repeat;
     background-size: cover;      /* stretch to fill container */
     background-position: center; /* center the image */
@@ -627,7 +657,7 @@ body {
 /* ============== MOBILE ============== */
 /* ==================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
     /* Make slides full width */
     .slide1,
@@ -637,24 +667,43 @@ body {
     .slide6,
     .slide7,
     .slide8 {
-        width: 95vw;
-        margin: 8vw auto;
-        border-radius: 8vw;
+        margin: 2rem auto;
+        border-radius: 1.5rem;
+    }
+
+    .slide2 {
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.5rem 0rem 1.5rem 0rem;
+        min-height: auto;
+    }
+    .slide3{
+        padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+        min-height: auto;
+    }
+
+    .slide3-text-container .title {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .slide3-text-container .mainText {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+
+    /* SLIDE 3 text resizing */
+    .slide3-text-container .names {
+        font-size: 1.2rem;
     }
 
     /* Remove most absolute positioning */
-    .slide2-text-container,
-    .slide3-text-container,
     .slide5-text-container,
     .slide6-text-container,
     .slide7-text-container {
         position: relative;
         width: 90%;
         top: auto;
-    }
-
-    .slide2 {
-        min-height: 65svh;
     }
 
     .slide4 {
@@ -692,7 +741,6 @@ body {
 
 
     /* Makes text readable */
-    .slide3-text-container .mainText,
     .slide5-text-container .mainText,
     .slide7-text-container .mainText {
         font-size: 4vw;
@@ -722,7 +770,6 @@ body {
     }
 
     /* Titles */
-    .slide3-text-container .title,
     .slide4-text-container .title,
     .slide5-text-container .title,
     .slide6-text-container .title,
@@ -741,19 +788,14 @@ body {
         font-size: 6vw;
     }
 
-    /* SLIDE 3 text resizing */
-    .slide3-text-container .names {
-        font-size: 6vw;
-    }
+
 
     /* SLIDE 2 image + text stack vertically */
-    .slide2,
-    .slide3,
     .slide4,
     .slide5,
     .slide7 {
         flex-direction: column;
-        padding: 5vw 0;
+        padding: 0.5rem 1rem 0.5rem 1rem;
     }
 
     /* Centre imageS2 */
