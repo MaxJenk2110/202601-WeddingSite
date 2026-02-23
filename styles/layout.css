@@ -259,28 +259,25 @@ body {
 /* ==================================== */
 
 .slide4 {
-    position: relative;        /* positioning context for images */
-    width: 80vw;
-    min-height: 65vh;         /* 85% of full viewport height per slide */
+    height: auto;
+    min-height: 700px;         /* 85% of full viewport height per slide */
+    padding: 4rem 5rem 2.5rem 5em;      /* [top right bottom left]*/
     display: flex;
     justify-content: center;   /* horizontally center content */
-    align-items: center;       /* vertically center content if needed */
-    /*background-color: rgba(255, 255, 255, 0.4); /* optional: semi-transparent layer for readability */
+    flex-direction: column;  /* stack children horizontally */
+    align-items: center;     /* center each child horizontally */
+    gap: 3rem;
     background-color: #EAE4CC;
-    max-width: 90vw;
-    margin: 10vw auto;
-    border-radius: 5vw;
-    z-index: 1;           /* keeps content above background */
 }
 
-.imageS4 {
+.imageS4OLD {
     position: absolute;
     top: 60%;
     transform: translateY(-50%); /* only vertical centering */
     height: 70%;
 }
 
-.slide4-text-container {
+.slide4-text-containerOLD {
     position: absolute;      /* position relative to the slide */
     top: 10%;
     width: 70vw;
@@ -294,11 +291,27 @@ body {
     z-index: 2;
 }
 
+.imageS4 {
+    position: relative;
+    flex: none;           /* do not allow flexbox to resize */
+    max-width: 750px;     /* preferred max size on desktop */
+    width: 60%;          /* scale down with container */
+    height: auto;         /* ALWAYS preserve intrinsic aspect ratio */
+    display: block;       /* prevent inline stretching quirks */
+}
+
+.slide4-text-container {
+    position: relative;
+    display: flex;
+    text-align: center;      /* fallback for child text */
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
 .slide4-text-container .title {
     font-family: 'holy-river';
     font-weight: normal;
     font-style: normal;
-    font-size: 6vw;
+    font-size: 6rem;
     line-height: 1;          /* better than 0.5em for readability */
     color: #343E2D;
 }
@@ -663,6 +676,7 @@ body {
     .slide1,
     .slide2,
     .slide3,
+    .slide4,
     .slide5,
     .slide6,
     .slide7,
@@ -677,12 +691,16 @@ body {
         padding: 1.5rem 0rem 1.5rem 0rem;
         min-height: auto;
     }
-    .slide3{
+
+    .slide3,
+    .slide4 {
         padding: 1.5rem 0.5rem 0.5rem 0.5rem;
+        gap: 1rem;
         min-height: auto;
     }
 
-    .slide3-text-container .title {
+    .slide3-text-container .title,
+    .slide4-text-container .title {
         font-size: 1.5rem;
         width: 100%;
     }
@@ -697,6 +715,14 @@ body {
         font-size: 1.2rem;
     }
 
+    .imageS4 {
+        width: 100%;
+    }
+
+
+
+
+
     /* Remove most absolute positioning */
     .slide5-text-container,
     .slide6-text-container,
@@ -706,37 +732,12 @@ body {
         top: auto;
     }
 
-    .slide4 {
-        flex-direction: column;    /* stack children vertically */
-        align-items: center;       /* center content horizontally */
-        width: 95vw;
-        min-height: 25svh;
-        padding: 8vw auto;
-    }
-
     .slide5 {
         min-height: 95svh;
     }
 
     .slide7 {
         min-height: 80svh;
-    }
-
-    .slide4-text-container {
-        position: relative;      /* remove absolute positioning */
-        width: 90%;              /* nearly full width */
-        top: auto;               /* reset top */
-        margin-bottom: 5vw;
-    }
-
-    .slide4 .imageS4 {
-        position: relative;
-        width: 100%;              /* make it bigger */
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;            /* center image */
-        top: auto;                 /* reset previous top */
-        transform: none;
     }
 
 
@@ -770,7 +771,6 @@ body {
     }
 
     /* Titles */
-    .slide4-text-container .title,
     .slide5-text-container .title,
     .slide6-text-container .title,
     .slide7-text-container .title {
@@ -791,7 +791,6 @@ body {
 
 
     /* SLIDE 2 image + text stack vertically */
-    .slide4,
     .slide5,
     .slide7 {
         flex-direction: column;
@@ -816,7 +815,6 @@ body {
         right: auto;
     }
 
-    .slide4-text-container .title,
     .slide5-text-container .title,
     .slide7-text-container .title {
         margin-top: 5vw; /* move it down by 5% of viewport width */
