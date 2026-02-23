@@ -701,13 +701,26 @@ body {
 
     .slide3-text-container .title,
     .slide4-text-container .title {
-        font-size: 1.5rem;
+        font-size: 1.7rem;
         width: 100%;
     }
 
     .slide3-text-container .mainText {
         font-size: 0.7rem;
         width: 100%;
+    }
+
+    /* Slide-specific changes: */
+
+    /* SLIDE 2 text resizing */
+    .september-date{
+        font-size: 2rem;
+    }
+    .at {
+        font-size: 1.2rem;
+    }
+    .venue {
+        font-size: 1.3rem;
     }
 
     /* SLIDE 3 text resizing */
@@ -777,16 +790,7 @@ body {
         font-size: 10vw;
     }
 
-    /* SLIDE 2 text resizing */
-    .september-date{
-        font-size: 10vw;
-    }
-    .at {
-        font-size: 6vw;
-    }
-    .venue {
-        font-size: 6vw;
-    }
+
 
 
 
