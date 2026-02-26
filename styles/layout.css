@@ -379,7 +379,6 @@ body {
     font-family: 'eschaton';
     font-weight: 100;
     font-size: 1rem;
-    opacity: 0.8;
     color: #E4DFD0;
 }
 
@@ -431,18 +430,6 @@ body {
     /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
-.slide6 .titleOLD {
-    grid-column: 1 / -1;
-    text-align: center;
-    font-family: 'holy-river';
-    font-weight: normal;
-    font-style: normal;
-    font-size: 6vw;
-    line-height: 1;          /* better than 0.5em for readability */
-    color: #343E2D;
-    /*background-color: rgba(0, 0, 0, 0.2);*/
-}
-
 .slide6-row {
     display: flex;
     justify-content: center;
@@ -451,23 +438,6 @@ body {
     width: 100%;
     max-width: 1100px;
     /*background-color: rgba(255, 255, 255, 0.2);*/
-}
-
-.slide6-rowOLD {
-    position: relative;      /* position relative to .slide6 */
-    width: 80%;
-    min-height: 43vh;
-
-    display: grid;
-    grid-template-columns: repeat(3, 0.8fr);   /* 3 equal columns */
-    column-gap: 6vw;                                
-
-    align-items: stretch;      /* vertical alignment inside cells */
-    text-align: center;
-
-    /*background-color: rgba(255, 255, 255, 0.7);*/
-    z-index: 2;
-    padding: 2em;
 }
 
 .slide6-row .text-column {
@@ -540,7 +510,7 @@ body {
 
     text-decoration: none;
     color: #E4DFD0;
-    /*background-color: #343E2D;*/
+    background-color: #343E2D;
 
     transition: all 0.25s ease;
 }
@@ -784,7 +754,7 @@ body {
 
     /* SLIDE 6 */
     .slide6 {
-        padding: 0.2rem 0.5rem 0.8rem 0.5rem;
+        padding: 0.2rem 0.9rem 0.8rem 0.9rem;
     }
     .slide6-row {
         flex-direction: column;   /* stack text + button vertically */
@@ -819,7 +789,7 @@ body {
     /* SLIDE 7 */
 
     .slide7 {
-        padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+        padding: 0.2rem 0.9rem 0.5rem 0.9rem;
         min-height: auto;
     }
 
