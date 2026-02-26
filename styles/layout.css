@@ -714,7 +714,7 @@ body {
 
     /* SLIDE 5 */
     .slide5 {
-        padding: 0.2rem 0.5rem 0.5rem 0.5rem;
+        padding: 0.2rem 1.5rem 0.5rem 1.5rem;
     }
 
     .slide5-row {
@@ -754,7 +754,7 @@ body {
 
     /* SLIDE 6 */
     .slide6 {
-        padding: 0.2rem 1.2rem 0.8rem 1.2rem;
+        padding: 0.2rem 1.5rem 0.8rem 1.5rem;
     }
     .slide6-row {
         flex-direction: column;   /* stack text + button vertically */
@@ -789,7 +789,7 @@ body {
     /* SLIDE 7 */
 
     .slide7 {
-        padding: 0.2rem 1.2rem 0.5rem 1.2rem;
+        padding: 0.2rem 1.5rem 0.5rem 1.5rem;
         min-height: auto;
     }
 
