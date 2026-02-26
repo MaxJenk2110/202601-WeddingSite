@@ -64,7 +64,7 @@ body {
     min-height: 85vh;         /* 85% of full viewport height per slide */
     display: flex;
     justify-content: center;   /* horizontally center content */
-    background-color: rgba(255, 255, 255, 0.1); /* optional: semi-transparent layer for readability */
+    /*background-color: rgba(255, 255, 255, 0.1);*/ /* optional: semi-transparent layer for readability */
     margin: 5rem auto;
 }
 
@@ -213,7 +213,7 @@ body {
     /*background-position: center; /* center the image */
     
 
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
     z-index: 2;
 }
 
@@ -298,7 +298,7 @@ body {
     position: relative;
     display: flex;
     text-align: center;      /* fallback for child text */
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .slide4-text-container .title {
@@ -332,7 +332,7 @@ body {
     text-align: center;
     margin-bottom: 0rem;
     color: #E4DFD0;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .slide5-row {
@@ -342,7 +342,7 @@ body {
     gap: 5rem;
     width: 100%;
     max-width: 1100px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .slide5-row .text-column {
@@ -352,7 +352,7 @@ body {
     flex: 1;
     align-items: center;
     max-width: 550px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .text-column .mainTextHeader {
@@ -388,7 +388,7 @@ body {
     flex: 0 0 auto;
     display: flex;
     padding: 6rem 0rem 0rem 0rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .buttonS5 {
@@ -428,7 +428,7 @@ body {
     text-align: center;
     margin-bottom: 0rem;
     color: #343E2D;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .slide6 .titleOLD {
@@ -440,7 +440,7 @@ body {
     font-size: 6vw;
     line-height: 1;          /* better than 0.5em for readability */
     color: #343E2D;
-    background-color: rgba(0, 0, 0, 0.2);
+    /*background-color: rgba(0, 0, 0, 0.2);*/
 }
 
 .slide6-row {
@@ -450,7 +450,7 @@ body {
     gap: 5rem;
     width: 100%;
     max-width: 1100px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .slide6-rowOLD {
@@ -465,7 +465,7 @@ body {
     align-items: stretch;      /* vertical alignment inside cells */
     text-align: center;
 
-    background-color: rgba(255, 255, 255, 0.7);
+    /*background-color: rgba(255, 255, 255, 0.7);*/
     z-index: 2;
     padding: 2em;
 }
@@ -477,7 +477,7 @@ body {
     flex: 1;
     align-items: center;
     max-width: 550px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .slide6-row .leftContainer,
@@ -489,7 +489,7 @@ body {
     flex: 1; /* Equal widths */
     align-items: center;
     max-width: 400px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .leftContainer .imageS6,
@@ -513,17 +513,16 @@ body {
     letter-spacing: 0.05em;  /* small spacing between letters */
     text-align: center;
     color: #343E2D;
-    background-color: rgba(0,0,0,0.2);
+    /*background-color: rgba(0,0,0,0.2);*/
 }
 
-.buttonContainer {
-    background-color: rgba(0,0,0,0.2);
-    
+.buttonContainer {    
     margin-top: auto;  /* pushes button section to bottom */
     display: flex;
     flex-direction: column;
     gap: 0.8em;
     align-items: center;
+    /*background-color: rgba(0,0,0,0.2);*/
 }
 
 .buttonS6 {
@@ -541,13 +540,13 @@ body {
 
     text-decoration: none;
     color: #E4DFD0;
-    background-color: #343E2D;
+    /*background-color: #343E2D;*/
 
     transition: all 0.25s ease;
 }
 /* Hover effect */
 .buttonS6:hover {
-    background-color: #55634A;
+    /*background-color: #55634A;*/
     transform: translateY(-2px);
 }
 /* Click effect */
@@ -578,7 +577,7 @@ body {
     text-align: center;
     margin-bottom: 0rem;
     color: #E4DFD0;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .slide7-row {
@@ -588,7 +587,7 @@ body {
     gap: 5rem;
     width: 100%;
     max-width: 1100px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .slide7-row .text-column {
@@ -598,7 +597,7 @@ body {
     flex: 1;
     align-items: center;
     max-width: 550px;
-    background-color: rgba(255, 255, 255, 0.2);
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .text-column .mainTextHeader {
@@ -633,8 +632,8 @@ body {
     height: 100%;
     flex: 0 0 auto;
     display: flex;
-    padding: 8rem 0rem 0rem 0rem;
-    background-color: rgba(255, 255, 255, 0.2);
+    padding: 5rem 0rem 0rem 0rem;
+    /*background-color: rgba(255, 255, 255, 0.2);*/
 }
 
 .imageS7 {
@@ -667,7 +666,7 @@ body {
 }
 
 .rsvp-container {
-    background-color: rgba(0,0,0,0.5);
+    /*background-color: rgba(0,0,0,0.5);*/
     width: 45vw;              /* control form width */
 }
 
@@ -675,7 +674,6 @@ body {
     width: 100%;
     height: 80vh;
     border: none;
-    border-radius: 20px;
 }
 
 
